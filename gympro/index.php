@@ -13,7 +13,7 @@ $role = isset($_SESSION['role']) ? $_SESSION['role'] : 'Unknown';
 $selected_country = isset($_SESSION['country']) ? $_SESSION['country'] : 'Philippines';
 ?>
 
-<!-- OPTION 5: Navbar with Logout -->
+
 <nav style="background: #FFA500; padding: 1rem; display: flex; justify-content: space-between; align-items: center;">
     <div>
         <span>Welcome, <?= htmlspecialchars($username) ?> (<?= htmlspecialchars($role) ?>)</span>
@@ -135,3 +135,4 @@ $selected_country = isset($_SESSION['country']) ? $_SESSION['country'] : 'Philip
   <script src="assets/js/main.js"></script>
 </body>
 </html>
+
