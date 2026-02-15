@@ -1,0 +1,460 @@
+/* Fonts */
+body {
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #EFEEEA;
+  color: #273F4F;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Anton', sans-serif;
+  font-size: 1.8rem;
+  color: #000000;
+}
+.logo img {
+  height: 20px;
+  margin-right: 0.5rem;
+}
+
+/* Nav Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: lab(65.49% 48.25 51.96);
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #273F4F;
+  padding: 0.5rem;
+  list-style: none;
+  top: 100%;
+  left: 0;
+  border-radius: 5px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content li {
+  margin: 0.5rem 0;
+}
+.dropdown-content a {
+  color: #EFEEEA;
+}
+
+/* Burger Menu */
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: url('https://generationiron.com/wp-content/uploads/2025/03/unnamed-2-1024x576.jpg') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.hero-overlay {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+.hero h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 3rem;
+  line-height: 1.2;
+}
+.hero .highlight-orange { color: #FE7743; }
+.hero .highlight-yellow { color: #FFD700; }
+.hero p {
+  margin: 1rem 0 2rem;
+  font-size: 1.1rem;
+}
+
+/* Buttons */
+.btn {
+  background: #FE7743;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #273F4F;
+}
+
+/* Cards */
+.form-cards {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+.form-cards h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card .icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.card a {
+  color: #FE7743;
+  font-weight: bold;
+  text-decoration: none;
+}
+.card a:hover { text-decoration: underline; }
+
+/* Footer */
+footer {
+  background: #000;
+  color: #EFEEEA;
+  padding: 3rem 2rem 1.5rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.footer-logo img {
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.footer-info h4,
+.footer-socials h4 {
+  margin-bottom: 1rem; /* fixed spacing */
+  color: #FE7743;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+
+
+/* Mission Section */
+.mission {
+  padding: 4rem 2rem;
+}
+.mission-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+.mission-img img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.mission-text {
+  flex: 1;
+}
+.mission-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.mission-text p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Why Choose Us Section */
+.why-choose {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #fafafa;
+}
+.why-choose h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.why-choose p {
+  color: #666;
+  margin-bottom: 3rem;
+}
+.features {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.feature-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 300px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+}
+.feature-card i {
+  font-size: 2rem;
+  color: #FE7743;
+  margin-bottom: 1rem;
+}
+
+
+/* Calculator Page */
+.calc-header {
+  text-align: center;
+  margin: 3rem 1rem 2rem;
+}
+.calc-header h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.calc-header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.calc-card {
+  max-width: 400px;
+  background: #fff;
+  margin: 0 auto 3rem;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.calc-card .card-icon {
+  font-size: 2rem;
+  color: #FE7743;
+  margin-bottom: 1rem;
+}
+.calc-card h2 {
+  margin-bottom: 1.5rem;
+}
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.form-group label {
+  flex: 1;
+  text-align: left;
+}
+.form-group input {
+  flex: 2;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.form-group .unit {
+  margin-left: 0.5rem;
+  color: #666;
+}
+.calc-card .btn {
+  background: #FE7743;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.calc-card .btn:hover {
+  background: #e65d28;
+}
+
+.motivation-card {
+  max-width: 600px;
+  background: #fff;
+  margin: 0 auto 3rem;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.motivation-card .card-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.motivation-card .green {
+  color: #28a745;
+}
+.motivation-card .tags {
+  margin-top: 1rem;
+}
+.tag {
+  display: inline-block;
+  margin: 0.3rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+.tag.strength { background: #FE7743; }
+.tag.cardio { background: #e63946; }
+.tag.nutrition { background: #28a745; }
+
+/* Gifs with information */
+.exercise {
+  position: relative;
+  display: inline-block;
+  margin: 1rem;
+  text-align: center;
+}
+
+.exercise img {
+  max-width: 250px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.exercise img:hover {
+  transform: scale(1.05);
+}
+
+.exercise-info {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 0.5rem;
+  transition: all 0.4s ease;
+}
+
+.exercise:hover .exercise-info {
+  opacity: 1;
+  max-height: 200px; /* enough for text */
+}
+
+
+/* Responsive Design */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .nav-links {
+    gap: 1rem;
+    font-size: 0.95rem;
+  }
+  .hero h1 { font-size: 2.2rem; }
+  .hero p { font-size: 1rem; }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 0;
+    background: #fff;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .nav-links li {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+  .hero { padding: 3rem 1rem; }
+  .hero h1 { font-size: 1.8rem; }
+  .btn { width: 100%; text-align: center; }
+  form { width: 100%; padding: 1rem; }
+
+  /* ===== Dropdown Fix for Mobile ===== */
+  .dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    background: #000000;
+    width: 100%;
+    transition: max-height 0.3s ease-out;
+  }
+  .dropdown.active .dropdown-content {
+    max-height: 300px; /* big enough for menu items */
+  }
+  .dropdown > a {
+    cursor: pointer;
+    display: block;
+    padding: 0.5rem 0;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .logo { font-size: 1.5rem; }
+  .hero h1 { font-size: 1.5rem; }
+  .hero p { font-size: 0.9rem; }
+  section h2 { font-size: 1.2rem; }
+}
+
+
